@@ -1,0 +1,23 @@
+.env
+
+#Buidler files
+cache
+artifacts
+lib
+
+node_modules
+dist/
+build/
+.vscode
+.idea
+ts-types/
+contracts/hardhat-dependency-compiler/
+flow-testnet old
+
+coverage
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+typechain
+types
+deployments

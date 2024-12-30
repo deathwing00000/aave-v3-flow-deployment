@@ -179,6 +179,7 @@ export const initReservesByHelper = async (
       aTokenToUse = delegationAwareATokenImplementationAddress;
     }
 
+    // here to configure name and sybmols of tokens
     initInputParams.push({
       aTokenImpl: aTokenToUse,
       stableDebtTokenImpl: stableDebtTokenImplementationAddress,

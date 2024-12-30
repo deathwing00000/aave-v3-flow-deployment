@@ -211,6 +211,7 @@ export default {
     : undefined,
   etherscan: {
     apiKey: {
+      flow: "empty",
       "flow-testnet": "empty",
       [eEthereumNetwork.sepolia]: "SAWW4TJWRUS434R1J29QKXUG8XBTBVTAP1",
     },
@@ -221,6 +222,14 @@ export default {
         urls: {
           apiURL: "https://evm-testnet.flowscan.io/api",
           browserURL: "https://evm-testnet.flowscan.io",
+        },
+      },
+      {
+        network: "flow",
+        chainId: 747,
+        urls: {
+          apiURL: "https://evm.flowscan.io/api",
+          browserURL: "https://evm.flowscan.io",
         },
       },
     ],

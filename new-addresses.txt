@@ -1,3 +1,5 @@
+testnet
+
 ┌─────────────────────────────────────────┬──────────────────────────────────────────────┐
 │ (index)                                 │ address                                      │
 ├─────────────────────────────────────────┼──────────────────────────────────────────────┤
@@ -44,6 +46,83 @@
 │ UiPoolDataProviderV3                    │ '0x504F9be69B51e14ad0B8622eB9BCA9C94FCd5718' │
 └─────────────────────────────────────────┴──────────────────────────────────────────────┘
 
+usdc.e
+0x1E6a4F5bD4149e404C8E5182170E45F56413f5C1
+0x65A44D6A53D38053B1b106973BEB438AC58BF61a
+0xbF7346De4708e6F3AB67bD43d24FF97534f00152
+6
+0x2ddd20F3E8cEA4C97B4927e37553a206a3858Ece
+0xbC462009560a9270bdB9A2bFA2efa1AD533793eb // USDC.e testnet mock
+0x1A731945dcb3eC2745871846282F3eB50182c5E7
+0xA686E00D0a41FEb79954Ba55C968db28A6d35b1F
+Aave Flow USDC.e
+aFlowUSDC.e
+Aave Flow Variable Debt USDC.e
+variableDebtFlowUSDC.e
+Aave Flow Stable Debt USDC.e
+stableDebtFlowUSDC.e
+0x10
+
+CBBTC
+0x1E6a4F5bD4149e404C8E5182170E45F56413f5C1
+0x65A44D6A53D38053B1b106973BEB438AC58BF61a
+0xbF7346De4708e6F3AB67bD43d24FF97534f00152
+8
+0x1DD51D82e8b9dC27c0d2CdeE79acd2AaDa0f4f6d
+0x30F44C64725727F2001E6C1eF6e6CE9c7aB91dC3 // CBBTC testnet mock
+0x1A731945dcb3eC2745871846282F3eB50182c5E7
+0xA686E00D0a41FEb79954Ba55C968db28A6d35b1F
+Aave Flow CBBTC
+aFlowcbBTC
+Aave Flow Variable Debt CBBTC
+variableDebtFlowcbBTC
+Aave Flow Stable Debt CBBTC
+stableDebtFlowcbBTC
+0x10
+
+[
+    [
+        "0x1E6a4F5bD4149e404C8E5182170E45F56413f5C1",
+        "0x65A44D6A53D38053B1b106973BEB438AC58BF61a",
+        "0xbF7346De4708e6F3AB67bD43d24FF97534f00152",
+        "18",
+        "0x1DD51D82e8b9dC27c0d2CdeE79acd2AaDa0f4f6d",
+        "0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e",
+        "0x1A731945dcb3eC2745871846282F3eB50182c5E7",
+        "0xA686E00D0a41FEb79954Ba55C968db28A6d35b1F",
+        "Aave Flow WFLOW",
+        "aFlowWFLOW",
+        "Aave Flow Variable Debt WFLOW",
+        "variableDebtFlowWFLOW",
+        "Aave Flow Stable Debt WFLOW",
+        "stableDebtFlowWFLOW",
+        "0x10"
+    ],
+    [
+        "0x1E6a4F5bD4149e404C8E5182170E45F56413f5C1",
+        "0x65A44D6A53D38053B1b106973BEB438AC58BF61a",
+        "0xbF7346De4708e6F3AB67bD43d24FF97534f00152",
+        "18",
+        "0x1DD51D82e8b9dC27c0d2CdeE79acd2AaDa0f4f6d",
+        "0x8E3DC6E937B560ce6a1Aaa78AfC775228969D16c",
+        "0x1A731945dcb3eC2745871846282F3eB50182c5E7",
+        "0xA686E00D0a41FEb79954Ba55C968db28A6d35b1F",
+        "Aave Flow ANKRFLOW",
+        "aFlowANKRFLOW",
+        "Aave Flow Variable Debt ANKRFLOW",
+        "variableDebtFlowANKRFLOW",
+        "Aave Flow Stable Debt ANKRFLOW",
+        "stableDebtFlowANKRFLOW",
+        "0x10"
+    ]
+]
+
+
+0x66514c97
+00000000000000000000000048dad407ab7299e0175f39f4cd12c524db0ab002
+0000000000000000000000000000000000000000000000000de0b6b3a7640000
+0000000000000000000000000000000000000000000000000000000000000001
+0000000000000000000000000000000000000000000000000000000000000000
 
 forge verify-contract \
   --rpc-url https://testnet.evm.nodes.onflow.org/ \
@@ -68,3 +147,81 @@ forge verify-contract \
   0x37F4f3A374Ef86C8eBDdd7005195aFeb5C3D41b3 \
   --libraries contracts/protocol/libraries/logic/ConfiguratorLogic.sol:ConfiguratorLogic:0x5DB40675670aE773191dE020F8b6ba04AeB0C55a \
   contracts/protocol/pool/PoolConfigurator.sol:PoolConfigurator --watch
+
+  mainnet
+========
+┌─────────┬──────────────────────────────────┬──────────────────────────────────────────────┬────────────────┐
+│ (index) │ name                             │ account                                      │ balance        │
+├─────────┼──────────────────────────────────┼──────────────────────────────────────────────┼────────────────┤
+│ 0       │ 'deployer'                       │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 1       │ 'aclAdmin'                       │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 2       │ 'emergencyAdmin'                 │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 3       │ 'poolAdmin'                      │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 4       │ 'addressesProviderRegistryOwner' │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 5       │ 'treasuryProxyAdmin'             │ '0x8A7798E68Ebc792971510DaF1Bdc2B4538e6f0cD' │ '0.0'          │
+│ 6       │ 'incentivesProxyAdmin'           │ '0x8A7798E68Ebc792971510DaF1Bdc2B4538e6f0cD' │ '0.0'          │
+│ 7       │ 'incentivesEmissionManager'      │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+│ 8       │ 'incentivesRewardsVault'         │ '0xC8419191Cb1A3bF4FfC022D01f857D5AFdeD01ba' │ '2.9798340523' │
+└─────────┴──────────────────────────────────┴──────────────────────────────────────────────┴────────────────┘
+
+Deployments
+===========
+┌──────────────────────────────────────────────┬──────────────────────────────────────────────┐
+│ (index)                                      │ address                                      │
+├──────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ ACLManager-Flow                              │ '0x7c390740711Ee097474E5d01E24455017f886fb3' │
+│ ANKRFLOW-AToken-Flow                         │ '0x597de7E4f064625a1328D8F35027526eaAd51Ec9' │
+│ ANKRFLOW-StableDebtToken-Flow                │ '0x6B7A4B47467495C33B3b03139dd9856f437073dE' │
+│ ANKRFLOW-VariableDebtToken-Flow              │ '0xBb1453905ED38844d30453d13f2bd15d01709b73' │
+│ AToken-Flow                                  │ '0xcc2e9eAB71095B0431eCA814159866bF24dE98A4' │
+│ AaveOracle-Flow                              │ '0x36c8f3f72B1E09cC83694ED5e96c67B3FB568fDC' │
+│ BorrowLogic                                  │ '0x8b8A91701Be22587f318979485B7ce9bC57DD491' │
+│ BridgeLogic                                  │ '0xb3CC8C1cAA0AF92e1a79C1F6084434e9421aE227' │
+│ ConfiguratorLogic                            │ '0xF826d9a27503d1F8521d90b9631b2ACbc338E95b' │
+│ DelegationAwareAToken-Flow                   │ '0x7E752CF69B5522cb0fdBb14f13b3c8787e1bf174' │
+│ EModeLogic                                   │ '0x8360cCde5F4506c21D555D74aA99B12529689940' │
+│ EmissionManager                              │ '0x1B945fB473a12674f6de53484ec92F7D5d2233eA' │
+│ FlashLoanLogic                               │ '0x75AB1E4b47442832a5E088031360b4cD4F12bf0b' │
+│ IncentivesProxy                              │ '0x9C6EB1C44b606A8B965bf98F438a7Da12C5417c9' │
+│ IncentivesV2-Implementation                  │ '0xAA6BcE803f970C6db12E79dBF0a6bcFC7dF55991' │
+│ LiquidationLogic                             │ '0x565d5cF25AbE76909EDdeC9e724e4df755C9acA3' │
+│ Pool-Implementation                          │ '0x087156b86A8efc394B72a612Bf858Cc197895729' │
+│ Pool-Proxy-Flow                              │ '0x743543B3061Ea88c89272C65D766d33F98Db6209' │
+│ PoolAddressesProvider-Flow                   │ '0x5fE2EFe476DC4b19d8160637E78e0ca93fAa7cB7' │
+│ PoolAddressesProviderRegistry                │ '0x7aE7296dbDD8ae42fbEeB41d90490821F635a159' │
+│ PoolConfigurator-Implementation              │ '0x4e2428f597591Bf71f140aea3CF36e6a3772b121' │
+│ PoolConfigurator-Proxy-Flow                  │ '0x2fDc23410327392852298E42DA2509C69dCE10Ab' │
+│ PoolDataProvider-Flow                        │ '0x99C53B7368a2F13571119df14b11d9BF80F3f62c' │
+│ PoolLogic                                    │ '0x2E64AaFEF12cFfade705FF9282a53C3007c62F24' │
+│ ReserveStrategy-rateStrategyStableOneFlow    │ '0x177AA185BFe869a754d2c285623A445F1Fc888dD' │
+│ ReserveStrategy-rateStrategyStableTwoFlow    │ '0x4E6A927F6A91E0f37195d6637Bb4B7Fb74cE5C7f' │
+│ ReserveStrategy-rateStrategyVolatileOneFlow  │ '0x3e6FAb75Ff2aABFe0bAb65faBB5d1b9546d12e44' │
+│ ReserveStrategy-rateStrategyVolatileThreelow │ '0xFfEE8A6BB55a947D30dE5D728D0B76200b31c19A' │
+│ ReserveStrategy-rateStrategyVolatileTwoFlow  │ '0xcAaC7484cAD681a32651b18d67c255158DB81536' │
+│ ReservesSetupHelper                          │ '0xffacCe79CA2B7B8EA1D3094476c390bA8f952e58' │
+│ StableDebtToken-Flow                         │ '0x5fa30F913C14DbBC5dA70b914F219D84ac99838C' │
+│ SupplyLogic                                  │ '0xd783A804F88C1dd83b0161521597C993Aa34d405' │
+│ Treasury-Controller                          │ '0x3f8534a360471B62F8a63e0Aa2B3BF151F07cA84' │
+│ Treasury-Implementation                      │ '0x5eB91B7607634Daa7CA3470dABbb832dc4F97f63' │
+│ TreasuryProxy                                │ '0x993eF0dd94ffC3962EA5559a96786A92e002290E' │
+│ USDC.e-AToken-Flow                           │ '0x24Ae44362D9D296eb7F7c5A01187c328Fb051143' │
+│ USDC.e-StableDebtToken-Flow                  │ '0xd060e4cc7612F8d05E32cB2A6f11F19959e632c5' │
+│ USDC.e-VariableDebtToken-Flow                │ '0x95164CB8EBE55b4Fe7F81aa00F71213189d5c667' │
+│ UiIncentiveDataProviderV3                    │ '0x3BE1D274F91ab3737Cab2186d2D0C6427091Aff6' │
+│ UiPoolDataProviderV3                         │ '0x2B6BE6BeB32CB6e8d4fde0Fd1d827e3614Ab6D7A' │
+│ VariableDebtToken-Flow                       │ '0x0bd6Cd469895173667A179521917c2C2AbBa92BF' │
+│ WFLOW-AToken-Flow                            │ '0x067F708Ee574c017320Aea6Ab4eB8e9074B4634e' │
+│ WFLOW-StableDebtToken-Flow                   │ '0xB453F64D3d9777b2C1954AD0b43E69d6FC505ea6' │
+│ WFLOW-VariableDebtToken-Flow                 │ '0x42f92938A8B6329a53F7c2736677AC0369D56179' │
+│ WalletBalanceProvider                        │ '0xAE836c30C58e8Cfe6273C50b44CC7eD03D977586' │
+│ WrappedTokenGatewayV3                        │ '0xA3F37226359C155A9A0115a300A56FA8ecD1C697' │
+│ cbBTC-AToken-Flow                            │ '0x00905e137DeE913a5Cf5448AA94ab606Bc88b24b' │
+│ cbBTC-StableDebtToken-Flow                   │ '0xD61658797fEf53cDbd9377e3a177AeCb4b7aaFb4' │
+│ cbBTC-VariableDebtToken-Flow                 │ '0xe85b6BDec8aeFEC2ee62c690D5A13276e7a706E2' │
+└──────────────────────────────────────────────┴──────────────────────────────────────────────┘
+
+Mintable Reserves and Rewards
+┌─────────┐
+│ (index) │
+├─────────┤
+└─────────┘
